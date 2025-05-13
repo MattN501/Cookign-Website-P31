@@ -7,10 +7,7 @@
 
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="stylesheet" href="style.css"> <!-- Optional custom styles -->
-    
-    <script src="script.js" defer></script> <!-- Optional JS file -->
 </head>
 <body class="bg-gray-100">
 
@@ -39,81 +36,55 @@
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section class="container mx-auto my-6 p-6 bg-white rounded-lg shadow">
-        <h2 class="text-2xl font-bold mb-4">Categories</h2>
-        <div class="flex flex-wrap gap-4">
-            <a href="recipes.html#vegan" class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition">Vegan</a>
-            <a href="recipes.html#vegetarian" class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition">Vegetarian</a>
-            <a href="recipes.html#gluten-free" class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition">Gluten-Free</a>
-            <a href="recipes.html#desserts" class="bg-yellow-600 text-white py-2 px-4 rounded hover:bg-yellow-700 transition">Desserts</a>
-        </div>
-    </section>
-
     <!-- Recipes Section -->
     <section class="container mx-auto my-10 p-6 bg-white rounded-lg shadow">
         <h2 class="text-2xl font-bold mb-4">All Recipes</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Recipe Card -->
-            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200">
+            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200 cursor-pointer" onclick="showRecipe('spicy-chicken-wings')">
                 <h3 class="text-xl font-semibold">Spicy Chicken Wings</h3>
                 <p class="text-gray-600">A delicious recipe for crispy and spicy chicken wings to satisfy your cravings.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <a href="recipe/spicy-chicken-wings.html" class="text-indigo-600 hover:underline">View Recipe</a>
-                    <span class="text-yellow-500">⭐⭐⭐⭐☆ (4/5)</span>
-                </div>
             </article>
 
             <!-- Recipe Card -->
-            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200">
+            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200 cursor-pointer" onclick="showRecipe('vegan-tacos')">
                 <h3 class="text-xl font-semibold">Vegan Tacos</h3>
                 <p class="text-gray-600">Flavorful and healthy vegan tacos loaded with fresh ingredients.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <a href="recipe/vegan-tacos.html" class="text-indigo-600 hover:underline">View Recipe</a>
-                    <span class="text-yellow-500">⭐⭐⭐⭐⭐ (5/5)</span>
-                </div>
             </article>
 
             <!-- Recipe Card -->
-            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200">
+            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200 cursor-pointer" onclick="showRecipe('margherita-pizza')">
                 <h3 class="text-xl font-semibold">Classic Margherita Pizza</h3>
                 <p class="text-gray-600">A classic Italian margherita pizza topped with fresh basil.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <a href="recipe/margherita-pizza.html" class="text-indigo-600 hover:underline">View Recipe</a>
-                    <span class="text-yellow-500">⭐⭐⭐⭐⭐ (5/5)</span>
-                </div>
             </article>
 
             <!-- Recipe Card -->
-            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200">
+            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200 cursor-pointer" onclick="showRecipe('chocolate-chip-cookies')">
                 <h3 class="text-xl font-semibold">Chocolate Chip Cookies</h3>
                 <p class="text-gray-600">Soft and chewy chocolate chip cookies that are a favorite.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <a href="recipe/chocolate-chip-cookies.html" class="text-indigo-600 hover:underline">View Recipe</a>
-                    <span class="text-yellow-500">⭐⭐⭐⭐ (4/5)</span>
-                </div>
             </article>
 
             <!-- Recipe Card -->
-            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200">
+            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200 cursor-pointer" onclick="showRecipe('beef-stir-fry')">
                 <h3 class="text-xl font-semibold">Beef Stir-Fry</h3>
                 <p class="text-gray-600">A quick and easy beef stir-fry packed with vegetables and flavors.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <a href="recipe/beef-stir-fry.html" class="text-indigo-600 hover:underline">View Recipe</a>
-                    <span class="text-yellow-500">⭐⭐⭐⭐ (4/5)</span>
-                </div>
             </article>
 
             <!-- Recipe Card -->
-            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200">
+            <article class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200 transition duration-200 cursor-pointer" onclick="showRecipe('caprese-salad')">
                 <h3 class="text-xl font-semibold">Caprese Salad</h3>
                 <p class="text-gray-600">A refreshing caprese salad with fresh tomatoes and mozzarella.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <a href="recipe/caprese-salad.html" class="text-indigo-600 hover:underline">View Recipe</a>
-                    <span class="text-yellow-500">⭐⭐⭐⭐ (4/5)</span>
-                </div>
             </article>
+        </div>
+
+        <!-- Recipe Details Section -->
+        <div id="recipe-details" class="mt-6 p-4 bg-gray-50 rounded-lg hidden">
+            <h1 id="recipe-title" class="text-2xl font-bold mb-4"></h1>
+            <h2 class="text-xl font-semibold mb-2">Ingredients:</h2>
+            <ul id="recipe-ingredients" class="list-disc ml-5 mb-4"></ul>
+            <h2 class="text-xl font-semibold mb-2">Instructions:</h2>
+            <ol id="recipe-instructions" class="list-decimal ml-5 mb-4"></ol>
         </div>
     </section>
     <!-- End Recipes Section -->
@@ -127,7 +98,87 @@
     <!-- End Footer -->
 
     <script>
-        // Simple search functionality (optional)
+        // Recipe data
+        const recipes = {
+            'spicy-chicken-wings': {
+                title: 'Spicy Chicken Wings',
+                ingredients: ['2 lbs chicken wings', '1/4 cup hot sauce', '1/4 cup melted butter', '1 teaspoon garlic powder', 'Salt and pepper to taste'],
+                instructions: [
+                    'Preheat the oven to 400°F (200°C).',
+                    'In a large bowl, mix together hot sauce, melted butter, garlic powder, salt, and pepper.',
+                    'Add in chicken wings and toss until wings are well coated.',
+                    'Spread the wings in a single layer on a baking sheet lined with parchment paper.',
+                    'Bake for 45 minutes, flipping halfway through, until wings are crispy and cooked through.',
+                    'Serve hot and enjoy!'
+                ]
+            },
+            'vegan-tacos': {
+                title: 'Vegan Tacos',
+                ingredients: ['8 corn tortillas', '1 can black beans, rinsed and drained', '1 avocado, sliced', '1 cup chopped lettuce', '1 tomato, diced', '1/4 cup fresh cilantro, chopped', 'Lime wedges', 'Salt and pepper to taste'],
+                instructions: [
+                    'Warm the corn tortillas in a pan.',
+                    'Layer black beans, avocado, lettuce, tomato, and cilantro on each tortilla.',
+                    'Sprinkle with salt and pepper and squeeze lime over the top.',
+                    'Serve immediately and enjoy!'
+                ]
+            },
+            'margherita-pizza': {
+                title: 'Classic Margherita Pizza',
+                ingredients: ['1 pizza dough', '1 cup tomato sauce', '8 oz fresh mozzarella cheese, sliced', '2 cups fresh basil leaves', '2 tablespoons olive oil', 'Salt to taste'],
+                instructions: [
+                    'Preheat the oven to 475°F (245°C).',
+                    'Roll out the pizza dough on a floured surface.',
+                    'Spread tomato sauce over the base and arrange mozzarella on top.',
+                    'Season with salt, drizzle with olive oil, and add fresh basil.',
+                    'Bake for 10-12 minutes until the crust is golden.',
+                    'Slice and serve hot!'
+                ]
+            },
+            'chocolate-chip-cookies': {
+                title: 'Chocolate Chip Cookies',
+                ingredients: ['1 cup butter, softened', '1 cup sugar', '1 cup brown sugar', '2 eggs', '1 tsp vanilla extract', '3 cups flour', '1 tsp baking soda', '1/2 tsp salt', '2 cups chocolate chips'],
+                instructions: [
+                    'Preheat the oven to 350°F (175°C).',
+                    'Cream together the butter and sugars, then add eggs and vanilla.',
+                    'Mix in flour, baking soda, and salt.',
+                    'Fold in chocolate chips.',
+                    'Scoop tablespoon-sized balls onto a baking sheet.',
+                    'Bake for 10-12 minutes until golden. Let cool.'
+                ]
+            },
+            'beef-stir-fry': {
+                title: 'Beef Stir-Fry',
+                ingredients: ['1 lb beef sirloin, sliced thin', '1 red bell pepper, sliced', '1 green bell pepper, sliced', '1 onion, sliced', '3 cloves garlic, minced', '3 tablespoons soy sauce', '2 tablespoons vegetable oil'],
+                instructions: [
+                    'Heat oil in a pan over medium-high heat.',
+                    'Add garlic and beef, cooking until browned.',
+                    'Add vegetables and stir-fry for 3-4 minutes.',
+                    'Stir in soy sauce and cook for another minute.',
+                    'Serve hot over rice or noodles.'
+                ]
+            },
+            'caprese-salad': {
+                title: 'Caprese Salad',
+                ingredients: ['4 large tomatoes, sliced', '8 oz fresh mozzarella, sliced', '1 cup fresh basil leaves', '2 tablespoons olive oil', 'Salt and pepper to taste'],
+                instructions: [
+                    'Layer sliced tomatoes and mozzarella on a serving platter.',
+                    'Tuck in fresh basil leaves between layers.',
+                    'Drizzle with olive oil and sprinkle with salt and pepper.',
+                    'Serve immediately as a refreshing salad.'
+                ]
+            }
+        };
+
+        // Function to show recipe details
+        function showRecipe(recipeKey) {
+            const recipe = recipes[recipeKey];
+            document.getElementById('recipe-title').innerText = recipe.title;
+            document.getElementById('recipe-ingredients').innerHTML = recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('');
+            document.getElementById('recipe-instructions').innerHTML = recipe.instructions.map(instruction => `<li>${instruction}</li>`).join('');
+            document.getElementById('recipe-details').classList.remove('hidden');
+        }
+
+        // Simple search functionality
         document.getElementById('search').addEventListener('input', function() {
             const searchTerm = this.value.toLowerCase();
             const cards = document.querySelectorAll('.grid > article');
